@@ -1,0 +1,59 @@
+{
+  "name": "p5test",
+  "version": "1.0.1",
+  "author": "Joseph Luccisano <joseph.luccisano@gmail.com> (https://jluccisano.github.io)",
+  "description": "A delightfully Webpack ES6 Boilerplate",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "boilerplate",
+    "es6",
+    "babel",
+    "eslint",
+    "jest",
+    "sass"
+  ],
+  "bugs": {
+    "url": "https://github.com/jluccisano/webpack-es6-boilerplate/issues",
+    "email": "joseph.luccisano@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jluccisano/webpack-es6-boilerplate.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config conf/webpack.dev.js",
+    "build": "webpack --env=prod --progress --profile --colors",
+    "lint": "eslint ./src/**.js",
+    "coverage": "jest --coverage --config=conf/jest.config.js",
+    "test": "jest --config=conf/jest.config.js",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.0",
+    "clean-webpack-plugin": "0.1.16",
+    "css-loader": "^0.28.5",
+    "eslint": "*",
+    "eslint-loader": "*",
+    "extract-text-webpack-plugin": "next",
+    "html-webpack-plugin": "*",
+    "terser-webpack-plugin": "*",
+    "jest": "20.0.4",
+    "node-sass": "4.5.3",
+    "p5": "^0.7.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "webpack-livereload-plugin": "*",
+    "webpack-merge": "*"
+  },
+  "devDependencies": {
+    "webpack-cli": "*"
+  }
+}
